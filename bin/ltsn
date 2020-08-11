@@ -1,9 +1,9 @@
 const pkg = require('../package')
 const query = require('..').query
-const update = rqeuire('..').update
+const update = require('..').update
 
 function printResult (v) {
-  upadte(v).then(dists => {
+  update(v).then(dists => {
     const results = query(dists, v)
     console.log(results)
     process.exit()
